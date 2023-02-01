@@ -1,0 +1,48 @@
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+
+    .navigation__logo{
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #4299e1;
+    }
+
+
+    .navigation__logo--icon{
+        font-size: 2rem;
+        margin-left: 10px;
+    }
+
+
+    .navigation__logo--text{
+        font-size: 2rem;
+        margin-left: 10px;
+        color: #fff;
+    }
+
+    .navigation__list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .navigation__list--item{
+        list-style: none;
+        margin: 0 10px;
+    }
+
+    .navigation__list--link{
+        color: #a0aec0;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+}
