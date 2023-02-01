@@ -1,0 +1,40 @@
+.home-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+
+    .home-page__title{
+        height: 500px;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    h1{
+        font-size: 3rem;
+        font-weight: 700;
+        margin: 0;
+        color: #fff;
+        text-align: center;
+    }
+    p{
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-top: 30px;
+        color: #a0aec0;
+        text-align: center;
+
+    }
+    .span-color{
+        color: #63b3ed;
+        text-shadow: 0 0 4px #63b3ed;
+    }
+    .span-color-2{
+        color: #9f7aea;
+        text-shadow: 0 0 4px #9f7aea;
+    }
+}
