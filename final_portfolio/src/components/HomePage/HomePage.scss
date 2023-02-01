@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 70vh;
     width: 100%;
 
     .home-page__title{
@@ -37,4 +37,10 @@
         color: #9f7aea;
         text-shadow: 0 0 4px #9f7aea;
     }
+}
+
+.home-page-about{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }

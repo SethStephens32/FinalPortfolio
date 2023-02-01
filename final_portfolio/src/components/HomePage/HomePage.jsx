@@ -1,4 +1,5 @@
 import React from 'react'
+import CodeScreen from '../CodeScreen/CodeScreen'
 import './HomePage.scss'
 
 const HomePage = () => {
@@ -12,7 +13,10 @@ const HomePage = () => {
     </section>
 
     <section className="home-page-about">
-    <h1>hello</h1>
+        <div className="home-page-about__title">
+        <h1>Hi, I'm <span className='span-color'>Dylan</span>.</h1>
+        </div>
+    <CodeScreen/>
     </section>
     </>
   )
