@@ -4,21 +4,22 @@
     background-color: #0F182A;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-    padding: 14px;
+    // padding: 14px;
     border: 1px solid #3a3f44;
   
     .code-screen__dots{
       color: #3a3f44;
       font-size: .8rem;
+      border-bottom: 1px solid #3a3f44;
+      width: 100%;
     }
 
     .code-screen__dot{
-      margin: 4px 3px;
+      margin: 10px 5px;
     }
 
     .code{
       background-color: #0F182A;
-      border: 1px solid #3a3f44;
       color: #fff;
       font-family: monospace;
       font-size: 12px;
@@ -26,8 +27,17 @@
       border-radius: 10px;
       overflow: auto;
       font-size: 1rem;
-      height: 95%;
-      width: 100%;
+    }
+
+    .code__tag{
+      color: #F472B6;
+    }
+    .code__value{
+      color: #7DD3FC;
+    }
+    .Typewriter__wrapper{
+      margin-left: 50px;
+      color: #fff;
     }
   }
   

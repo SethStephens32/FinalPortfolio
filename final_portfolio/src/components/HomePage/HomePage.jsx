@@ -1,6 +1,19 @@
 import React from 'react'
 import CodeScreen from '../CodeScreen/CodeScreen'
 import './HomePage.scss'
+import {GrReactjs} from 'react-icons/gr'
+import {SiRedux} from 'react-icons/si'
+import {IoLogoJavascript} from 'react-icons/io'
+import {AiFillHtml5} from 'react-icons/ai'
+import {DiCss3} from 'react-icons/di'
+import {SiSass} from 'react-icons/si'
+import {IoLogoNodejs} from 'react-icons/io'
+import {DiNpm} from 'react-icons/di'
+import {SiExpress} from 'react-icons/si'
+import {SiPostgresql} from 'react-icons/si'
+import {SiMongodb} from 'react-icons/si'
+import {SiPython} from 'react-icons/si'
+
 
 const HomePage = () => {
   return (
@@ -13,8 +26,23 @@ const HomePage = () => {
     </section>
 
     <section className="home-page-about">
-        <div className="home-page-about__title">
-        <h1>Hi, I'm <span className='span-color'>Dylan</span>.</h1>
+        <div className="home-page-about__skills">
+            <GrReactjs className="home-page-about__skills__icon"/>
+            <SiRedux className="home-page-about__skills__icon"/>
+
+            <IoLogoJavascript className="home-page-about__skills__icon"/>
+            <AiFillHtml5 className="home-page-about__skills__icon"/>
+            <DiCss3 className="home-page-about__skills__icon"/>
+            <SiSass className="home-page-about__skills__icon"/>
+
+            <IoLogoNodejs className="home-page-about__skills__icon"/>
+            <DiNpm className="home-page-about__skills__icon"/>
+            <SiExpress className="home-page-about__skills__icon"/>
+
+            <SiPostgresql className="home-page-about__skills__icon"/>
+            <SiMongodb className="home-page-about__skills__icon"/>
+            <SiPython className="home-page-about__skills__icon"/>
+
         </div>
     <CodeScreen/>
     </section>

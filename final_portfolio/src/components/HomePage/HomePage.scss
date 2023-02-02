@@ -43,4 +43,19 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+    .home-page-about__skills{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .home-page-about__skills__icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px;
+        font-size: 3rem;
+        color: #a0aec0;
+    }
 }
