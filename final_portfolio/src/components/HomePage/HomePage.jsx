@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, useEffect } from "react";
+import { motion } from 'framer-motion'
 import CodeScreen from '../CodeScreen/CodeScreen'
 import SlideShow from '../SlideShow/SlideShow';
 import './HomePage.scss'
@@ -10,8 +10,12 @@ const HomePage = () => {
     <>
     <section className="home-page">
         <div className="home-page__title">
-       <h1>Bringing visionary concepts <br/> to tangible reality is <br/>my <span className='text-gradient'>passion</span>.</h1>
-        <p>Technical know-how meets <span className='text-gradient'>creativity</span>. Results-driven solutions.</p>
+       <motion.h1  initial={{ x: -600, opacity: 0 }}
+       animate={{ x: 0, opacity: 1 }}
+       transition={{ duration: 2, ease: 'easeOut' }}>Bringing visionary concepts <br/> to tangible reality is <br/>my <span className='text-gradient'>passion</span>.</motion.h1>
+        <motion.p initial={{ x: 600, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 2, ease: 'easeOut' }}>Technical know-how meets <span className='text-gradient'>creativity</span>. Results-driven solutions.</motion.p>
         </div>
     </section>
 
