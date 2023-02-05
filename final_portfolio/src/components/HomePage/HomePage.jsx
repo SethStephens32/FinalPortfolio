@@ -1,21 +1,8 @@
 import React from 'react'
 import { useState, useEffect } from "react";
 import CodeScreen from '../CodeScreen/CodeScreen'
+import SlideShow from '../SlideShow/SlideShow';
 import './HomePage.scss'
-import {GrReactjs} from 'react-icons/gr'
-import {SiRedux} from 'react-icons/si'
-import {IoLogoJavascript} from 'react-icons/io'
-import {AiFillHtml5} from 'react-icons/ai'
-import {DiCss3} from 'react-icons/di'
-import {SiSass} from 'react-icons/si'
-import {IoLogoNodejs} from 'react-icons/io'
-import {DiNpm} from 'react-icons/di'
-import {SiExpress} from 'react-icons/si'
-import {SiPostgresql} from 'react-icons/si'
-import {SiMongodb} from 'react-icons/si'
-import {SiPython} from 'react-icons/si'
-import Skills from '../Skills/Skills';
-
 
 const HomePage = () => {
 
@@ -30,7 +17,7 @@ const HomePage = () => {
 
     <section className="home-page-about">
         <div className="home-page-about__skills">
-        <Skills/>
+            <SlideShow/>
         </div>
     <CodeScreen/>
     </section>

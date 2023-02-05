@@ -27,7 +27,7 @@
         font-weight: 400;
         margin-top: 30px;
         color: #a0aec0;
-        text-align: center;
+        text-align: left;
 
     }
     .text-gradient{
@@ -58,7 +58,22 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        width: 600px;
+        height: 400px;
+        position: relative;
+        background: #1a202c;
+
+        &::before{
+            content: "";
+            position: absolute;
+            top: -2px;
+            right: -2px;
+            bottom: -2px;
+            left: -2px;
+            background: linear-gradient(to right, #63b3ed, #F472B6);
+            z-index: -1;
+            border: 2px solid transparent;
+        }
         
         p{
             font-size: 1.8rem;
