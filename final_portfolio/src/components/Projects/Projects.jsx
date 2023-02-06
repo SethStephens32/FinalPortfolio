@@ -2,13 +2,15 @@ import React from 'react'
 import './Projects.scss'
 import { AnimatePresence, motion } from 'framer-motion'
 import {useState } from 'react'
+import {CrwnClothing} from '../../assets/crwn-clothing.png'
 
 
 const projects = [
     {
         id: 1,
-        title: 'Project 1',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
+        title: 'Crown Clothing',
+        description: 'Crown Clothing is a full-stack e-commerce application built with React, Redux, Firebase, and Stripe. It features a fully functional shopping cart, user authentication, and a payment system.',
+        Image: CrwnClothing
     },
     {
         id: 2,
@@ -33,14 +35,19 @@ const Projects = () => {
 
   return (
     <>
+    <div className='projects__header'>
     <h1 className='skills__header'>I strive for excellence in my work.</h1>
-    <div className='projects__container'>
+    </div>
+    <motion.div className='projects__container'>
         {projects.map((project) => (
             <motion.div
             key={project.id}
             className='projects__card'
             layoutId={project.id}
             onClick={() => setSelectedId(project.id)}
+            style={{ backgroundImage: `url(${project.Image})`,
+                     backgroundSize: 'cover',
+                     backgroundRepeat: 'no-repeat'}}
             >
                 <motion.h2 layoutId={`title ${project.id}`}>{project.title}</motion.h2>
             </motion.div>
@@ -56,7 +63,7 @@ const Projects = () => {
             )}
         </AnimatePresence>
                 
-    </div>
+    </motion.div>
     </>
   )
 }
