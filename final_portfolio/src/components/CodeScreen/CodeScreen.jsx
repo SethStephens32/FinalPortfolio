@@ -5,7 +5,7 @@ import Typewriter from 'typewriter-effect'
 
 const CodeScreen = () => {
   return (
-    <div className="code-screen">
+    <div className="code-screen" style={{position: 'absolute', top: '800px', left: '750px', zIndex: '1'}}>
       <div className="code-screen__dots">
         <BsFillCircleFill className="code-screen__dot"/>
         <BsFillCircleFill className="code-screen__dot"/>

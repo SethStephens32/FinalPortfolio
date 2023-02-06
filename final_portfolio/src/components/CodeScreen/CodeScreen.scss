@@ -6,6 +6,9 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     // padding: 14px;
     border: 1px solid #3a3f44;
+    z-index: 2;
+    position: relative;
+    top: -70%;
   
     .code-screen__dots{
       color: #3a3f44;
