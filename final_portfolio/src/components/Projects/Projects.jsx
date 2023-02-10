@@ -2,7 +2,7 @@ import React from 'react'
 import './Projects.scss'
 import { AnimatePresence, motion } from 'framer-motion'
 import {useState } from 'react'
-import {CrwnClothing} from '../../assets/crwn-clothing.png'
+import CrwnClothing from '../../assets/crwn-clothing.png'
 
 
 const projects = [
@@ -47,9 +47,12 @@ const Projects = () => {
             onClick={() => setSelectedId(project.id)}
             style={{ backgroundImage: `url(${project.Image})`,
                      backgroundSize: 'cover',
-                     backgroundRepeat: 'no-repeat'}}
+                     backgroundPosition: 'center',
+                     backgroundRepeat: 'no-repeat',
+                    width: '100%',
+                    }}
             >
-                <motion.h2 layoutId={`title ${project.id}`}>{project.title}</motion.h2>
+                <motion.h2 layoutId={`title ${project.id}`} className="project__title">{project.title}</motion.h2>
             </motion.div>
         ))
             }

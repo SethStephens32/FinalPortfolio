@@ -4,36 +4,13 @@
     align-items: center;
     height: 60px;
     width: 100%;
-
-    .navigation__logo{
-        font-size: 1.5rem;
-        font-weight: 700;
-        text-decoration: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #4299e1;
-    }
-
-
-    .navigation__logo--icon{
-        font-size: 2rem;
-        margin-left: 10px;
-    }
-
-
-    .navigation__logo--text{
-        font-size: 2rem;
-        margin-left: 10px;
-        color: #fff;
-    }
+    font-family: 'Ubuntu Mono', monospace;
 
     .navigation__list{
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 0 20px;
-
     }
 
     .navigation__list--item{
@@ -42,8 +19,7 @@
 
         &:hover{
             .navigation__list--icon{
-                color: #63b3ed;
-                scale: 1.4;
+                color: #9f7aea;
             }
         }
     }
@@ -53,13 +29,21 @@
         text-decoration: none;
         font-size: 1.2rem;
 
+        .number-span{
+            color: #9f7aea;
+            font-size: 1.1rem;
+        }
+
         &:hover{
-            color: #63b3ed;
-            font-size: 1.4rem;
+            color: #9f7aea;
         }
     }
     .navigation__list--icon{
         font-size: 1.5rem;
         color: #a0aec0;
     }
+}
+.navigation__list--link.resume{
+    border: 1px solid #9f7aea;
+    padding: 7px 10px;
 }
