@@ -1,5 +1,7 @@
 import React from 'react'
+import {UseState, UseEffect} from 'react'
 import { motion, useAnimation } from 'framer-motion'
+import ParticlesBg from 'particles-bg'
 import ProfilePicture from '../../assets/profilePicture.jpg'
 import './HomePage.scss'
 
@@ -7,6 +9,7 @@ const HomePage = () => {
   return (
     <>
     <section className="home-page">
+    <ParticlesBg color="#63b3ed" type="cobweb" bg={true} num={100}/>
         <div className="home-page__title">
        <motion.h1  initial={{ x: -600, opacity: 0 }}
        animate={{ x: 0, opacity: 1 }}

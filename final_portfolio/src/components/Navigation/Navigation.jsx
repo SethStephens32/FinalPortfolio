@@ -1,4 +1,5 @@
 import React from 'react'
+import Logo from '../../assets/logo.png'
 import './Navigation.scss'
 import { IoLogoReact } from 'react-icons/io5'
 import {BsGithub} from 'react-icons/bs'

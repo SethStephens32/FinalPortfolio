@@ -7,8 +7,6 @@
     width: 100%;
 
     .home-page__title{
-        height: 500px;
-        width: 60%;
         display: flex;
         justify-content: center;
         align-items: left;
@@ -52,8 +50,8 @@
 .about{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    height: 100vh;
+    margin: 0 auto;
+    height: 80vh;
     width: 100%;
 
     .text-gradient{
